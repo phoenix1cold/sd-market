@@ -1,0 +1,339 @@
+{
+  "sdMarket": 1,
+  "meta": {
+    "name": "Test",
+    "author": "phoenix1cold",
+    "version": "1.0.0",
+    "description": "Test for market",
+    "created": "2026-07-17T13:17:20.028Z",
+    "sdVersion": "0.9.951"
+  },
+  "settings": {
+    "systemSettings": {
+      "attributes": {
+        "attr1": "Strength",
+        "attr2": "Dexterity",
+        "attr3": "Constitution",
+        "attr4": "Intelligence",
+        "attr5": "Wisdom",
+        "attr6": "Charisma"
+      },
+      "attributesEnabled": {
+        "attr1": true,
+        "attr2": true,
+        "attr3": true,
+        "attr4": true,
+        "attr5": true,
+        "attr6": true
+      },
+      "attributesInitial": {
+        "attr1": 10,
+        "attr2": 10,
+        "attr3": 10,
+        "attr4": 10,
+        "attr5": 10,
+        "attr6": 10
+      },
+      "resources": {
+        "hp": {
+          "label": "Hit Points",
+          "enabled": true,
+          "color": "#e05a5a",
+          "initialValue": 10,
+          "initialMax": 10,
+          "initialMin": 0
+        },
+        "mp": {
+          "label": "Mana Points",
+          "enabled": true,
+          "color": "#5a8ae0",
+          "initialValue": 10,
+          "initialMax": 10,
+          "initialMin": 0
+        },
+        "stamina": {
+          "label": "Stamina",
+          "enabled": false,
+          "color": "#5ae07a",
+          "initialValue": 10,
+          "initialMax": 10,
+          "initialMin": 0
+        }
+      },
+      "currencies": [
+        {
+          "key": "primary",
+          "label": "Gold"
+        },
+        {
+          "key": "secondary",
+          "label": "Silver"
+        },
+        {
+          "key": "tertiary",
+          "label": "Copper"
+        }
+      ],
+      "calculations": {
+        "defense": [
+          {
+            "key": "total",
+            "label": "Defense Total",
+            "default": 10,
+            "parts": [],
+            "useGraph": true,
+            "graphData": {
+              "nodes": [
+                {
+                  "id": "num_default",
+                  "type": "literal",
+                  "x": 320,
+                  "y": 230,
+                  "data": {
+                    "value": 0
+                  }
+                },
+                {
+                  "id": "output",
+                  "type": "output",
+                  "x": 660,
+                  "y": 230,
+                  "data": {}
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e_num_out",
+                  "fromNode": "num_default",
+                  "fromPin": "v",
+                  "toNode": "output",
+                  "toPin": "value"
+                }
+              ],
+              "comments": []
+            },
+            "compiledFormula": "0"
+          }
+        ],
+        "initiative": [
+          {
+            "key": "total",
+            "label": "Initiative Total",
+            "default": 0,
+            "parts": [],
+            "useGraph": true,
+            "graphData": {
+              "nodes": [
+                {
+                  "id": "num_default",
+                  "type": "literal",
+                  "x": 320,
+                  "y": 230,
+                  "data": {
+                    "value": 0
+                  }
+                },
+                {
+                  "id": "output",
+                  "type": "output",
+                  "x": 660,
+                  "y": 230,
+                  "data": {}
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e_num_out",
+                  "fromNode": "num_default",
+                  "fromPin": "v",
+                  "toNode": "output",
+                  "toPin": "value"
+                }
+              ],
+              "comments": []
+            },
+            "compiledFormula": "0"
+          }
+        ],
+        "movement": [
+          {
+            "key": "walk",
+            "label": "Walk",
+            "default": 30,
+            "parts": [],
+            "useGraph": true,
+            "graphData": {
+              "nodes": [
+                {
+                  "id": "num_default",
+                  "type": "literal",
+                  "x": 320,
+                  "y": 230,
+                  "data": {
+                    "value": 0
+                  }
+                },
+                {
+                  "id": "output",
+                  "type": "output",
+                  "x": 660,
+                  "y": 230,
+                  "data": {}
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e_num_out",
+                  "fromNode": "num_default",
+                  "fromPin": "v",
+                  "toNode": "output",
+                  "toPin": "value"
+                }
+              ],
+              "comments": []
+            },
+            "compiledFormula": "0"
+          },
+          {
+            "key": "swim",
+            "label": "Swim",
+            "default": 15,
+            "parts": [],
+            "useGraph": true,
+            "graphData": {
+              "nodes": [
+                {
+                  "id": "num_default",
+                  "type": "literal",
+                  "x": 320,
+                  "y": 230,
+                  "data": {
+                    "value": 0
+                  }
+                },
+                {
+                  "id": "output",
+                  "type": "output",
+                  "x": 660,
+                  "y": 230,
+                  "data": {}
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e_num_out",
+                  "fromNode": "num_default",
+                  "fromPin": "v",
+                  "toNode": "output",
+                  "toPin": "value"
+                }
+              ],
+              "comments": []
+            },
+            "compiledFormula": "0"
+          },
+          {
+            "key": "fly",
+            "label": "Fly",
+            "default": 0,
+            "parts": [],
+            "useGraph": true,
+            "graphData": {
+              "nodes": [
+                {
+                  "id": "num_default",
+                  "type": "literal",
+                  "x": 320,
+                  "y": 230,
+                  "data": {
+                    "value": 0
+                  }
+                },
+                {
+                  "id": "output",
+                  "type": "output",
+                  "x": 660,
+                  "y": 230,
+                  "data": {}
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e_num_out",
+                  "fromNode": "num_default",
+                  "fromPin": "v",
+                  "toNode": "output",
+                  "toPin": "value"
+                }
+              ],
+              "comments": []
+            },
+            "compiledFormula": "0"
+          },
+          {
+            "key": "climb",
+            "label": "Climb",
+            "default": 15,
+            "parts": [],
+            "useGraph": true,
+            "graphData": {
+              "nodes": [
+                {
+                  "id": "num_default",
+                  "type": "literal",
+                  "x": 320,
+                  "y": 230,
+                  "data": {
+                    "value": 0
+                  }
+                },
+                {
+                  "id": "output",
+                  "type": "output",
+                  "x": 660,
+                  "y": 230,
+                  "data": {}
+                }
+              ],
+              "edges": [
+                {
+                  "id": "e_num_out",
+                  "fromNode": "num_default",
+                  "fromPin": "v",
+                  "toNode": "output",
+                  "toPin": "value"
+                }
+              ],
+              "comments": []
+            },
+            "compiledFormula": "0"
+          }
+        ],
+        "other": []
+      },
+      "modifierFormula": "halved",
+      "uiScale": 100,
+      "colorScheme": "default"
+    },
+    "sheetTemplates": {},
+    "customFields": [],
+    "nodeTemplates": {},
+    "functionLibrary": {
+      "functions": {}
+    },
+    "initiativeFormula": "1d20",
+    "initiativeUseGraph": false,
+    "initiativeGraph": {
+      "nodes": [],
+      "edges": [],
+      "comments": []
+    },
+    "initiativeGraphCompiled": "",
+    "useEncumbrance": false
+  },
+  "content": {
+    "npcs": [],
+    "journals": [],
+    "packs": []
+  }
+}
