@@ -2,10 +2,10 @@
   "systems": [
     {
       "id": "test",
-      "name": "Test",
+      "name": "test",
       "author": "phoenix1cold",
       "version": "1.0.0",
-      "description": "Test",
+      "description": "Test testTest testTest testTest testTest testTest test",
       "package": "https://raw.githubusercontent.com/phoenix1cold/sd-market/main/packages/test.sd-system.json",
       "rulebook": "",
       "repo": "",
