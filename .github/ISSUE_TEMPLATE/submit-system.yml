@@ -1,0 +1,66 @@
+name: "Публикация системы"
+description: "Добавить свою систему в маркет System Director"
+title: "[system] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Заполните форму — бот сам проверит пакет и добавит систему в каталог. Пакет экспортируется в Foundry: Маркет → «Экспорт моей системы».
+  - type: input
+    id: name
+    attributes:
+      label: "Название"
+      placeholder: "Dark Fantasy"
+    validations:
+      required: true
+  - type: input
+    id: sysid
+    attributes:
+      label: "ID"
+      description: "Только латиница, цифры и дефисы. Повторная заявка с тем же ID обновит систему."
+      placeholder: "dark-fantasy"
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: "Автор"
+      description: "Если пусто — будет ваш ник на GitHub"
+  - type: input
+    id: version
+    attributes:
+      label: "Версия"
+      placeholder: "1.0.0"
+  - type: textarea
+    id: description
+    attributes:
+      label: "Описание"
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: "Теги"
+      description: "Через запятую"
+      placeholder: "fantasy, horror"
+  - type: input
+    id: repo
+    attributes:
+      label: "Репозиторий системы (для лайков-звёзд)"
+      placeholder: "https://github.com/user/repo"
+  - type: input
+    id: rulebook
+    attributes:
+      label: "Ссылка на рулбук (PDF)"
+  - type: input
+    id: icon
+    attributes:
+      label: "Ссылка на иконку"
+  - type: textarea
+    id: package
+    attributes:
+      label: "Файл пакета"
+      description: "Перетащите сюда файл *.sd-system.json (если GitHub не принимает .json — упакуйте его в .zip и перетащите архив) или вставьте прямую ссылку на него."
+    validations:
+      required: true
