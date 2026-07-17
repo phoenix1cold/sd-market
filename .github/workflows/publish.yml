@@ -2,7 +2,7 @@ name: Publish system
 
 on:
   issues:
-    types: [opened, edited]
+    types: [opened, edited, labeled]
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   publish:
-    if: contains(github.event.issue.labels.*.name, 'submission')
+    if: contains(github.event.issue.labels.*.name, 'submission') || startsWith(github.event.issue.title, '[system]')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
