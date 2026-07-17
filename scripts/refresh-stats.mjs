@@ -14,7 +14,7 @@ const index = JSON.parse(fs.readFileSync("index.json", "utf8"));
 for (const s of index.systems ?? []) {
   const m = String(s.repo ?? "").match(/github\.com\/([^/\s]+)\/([^/\s#?]+)/);
   if (!m) continue;
-  const base = `https://api.github.com/repos/${m[1]}/${m[2]}`;
+  const base = "https://api.github.com/repos/" + m[1] + "/" + m[2];
   try {
     const r = await fetch(base, { headers });
     if (r.ok) {

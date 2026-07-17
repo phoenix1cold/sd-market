@@ -1,23 +1,23 @@
-# SD Market — реестр систем сообщества
+# SD Market — community systems registry
 
-Каталог систем для [System Director](https://foundryvtt.com) — открывается прямо в Foundry (Настройки системы → Маркет сообщества).
+Catalog of user-created systems for **System Director** (FoundryVTT). It opens right inside Foundry: System settings → Community Market.
 
-## Как опубликовать свою систему
+## How to publish your system
 
-1. В Foundry: **Маркет → «Экспорт моей системы»** — скачается файл `*.sd-system.json` (можно выбрать, выгружать ли NPC, журналы и компендиумы).
-2. Нажмите **«Опубликовать»** в маркете (или откройте [форму публикации](../../issues/new?template=submit-system.yml)).
-3. Заполните форму и перетащите файл пакета в последнее поле (если GitHub не принимает `.json` — упакуйте в `.zip`).
-4. Бот проверит пакет, добавит систему в каталог и закроет заявку. Готово — система появится в маркете у всех.
+1. In Foundry: **Market → "Export my system"** — a `*.sd-system.json` package is downloaded (you can choose whether to include NPCs, journals and compendiums).
+2. Click **"Publish"** in the Market (or open the [publication form](../../issues/new?template=submit-system.yml)).
+3. Fill in the form and drag the package file into the last field (zip it first if GitHub rejects `.json`).
+4. The bot validates the package, adds the system to the catalog and closes the issue. Done — your system is live for everyone.
 
-Обновление системы — новая заявка с тем же **ID**.
+To update a system, submit the form again with the same **ID**.
 
-## Лайки
+## Likes
 
-Лайк = ⭐ звезда на репозитории системы. Счётчики звёзд и скачиваний обновляются автоматически раз в час.
+A like = a ⭐ star on the system's repository. Star and download counters are refreshed automatically every hour.
 
-## Структура
+## Structure
 
-- `index.json` — каталог (его читает Foundry)
-- `packages/` — пакеты систем
-- `.github/workflows/publish.yml` — автопубликация из заявок
-- `.github/workflows/refresh-stats.yml` — автообновление звёзд/скачиваний
+- `index.json` — the catalog (read by Foundry)
+- `packages/` — system packages
+- `.github/workflows/publish.yml` — auto-publishing from issues
+- `.github/workflows/refresh-stats.yml` — hourly stars/downloads refresh

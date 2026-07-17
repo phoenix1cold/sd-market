@@ -1,16 +1,16 @@
-name: "Публикация системы"
-description: "Добавить свою систему в маркет System Director"
+name: "Publish a system"
+description: "Add your system to the community market"
 title: "[system] "
 labels: ["submission"]
 body:
   - type: markdown
     attributes:
       value: |
-        Заполните форму — бот сам проверит пакет и добавит систему в каталог. Пакет экспортируется в Foundry: Маркет → «Экспорт моей системы».
+        Fill in this form and the bot will validate your package and add the system to the catalog automatically. Export the package in Foundry: Market -> "Export my system".
   - type: input
     id: name
     attributes:
-      label: "Название"
+      label: "Name"
       placeholder: "Dark Fantasy"
     validations:
       required: true
@@ -18,49 +18,49 @@ body:
     id: sysid
     attributes:
       label: "ID"
-      description: "Только латиница, цифры и дефисы. Повторная заявка с тем же ID обновит систему."
+      description: "Lowercase latin letters, digits and hyphens only. Submitting again with the same ID updates the system."
       placeholder: "dark-fantasy"
     validations:
       required: true
   - type: input
     id: author
     attributes:
-      label: "Автор"
-      description: "Если пусто — будет ваш ник на GitHub"
+      label: "Author"
+      description: "Defaults to your GitHub username if empty"
   - type: input
     id: version
     attributes:
-      label: "Версия"
+      label: "Version"
       placeholder: "1.0.0"
   - type: textarea
     id: description
     attributes:
-      label: "Описание"
+      label: "Description"
     validations:
       required: true
   - type: input
     id: tags
     attributes:
-      label: "Теги"
-      description: "Через запятую"
+      label: "Tags"
+      description: "Comma-separated"
       placeholder: "fantasy, horror"
   - type: input
     id: repo
     attributes:
-      label: "Репозиторий системы (для лайков-звёзд)"
+      label: "System repository (for likes/stars)"
       placeholder: "https://github.com/user/repo"
   - type: input
     id: rulebook
     attributes:
-      label: "Ссылка на рулбук (PDF)"
+      label: "Rulebook link (PDF)"
   - type: input
     id: icon
     attributes:
-      label: "Ссылка на иконку"
+      label: "Icon link"
   - type: textarea
     id: package
     attributes:
-      label: "Файл пакета"
-      description: "Перетащите сюда файл *.sd-system.json (если GitHub не принимает .json — упакуйте его в .zip и перетащите архив) или вставьте прямую ссылку на него."
+      label: "Package file"
+      description: "Drag & drop your *.sd-system.json file here (if GitHub rejects .json, zip it and drop the archive) or paste a direct link to it."
     validations:
       required: true
